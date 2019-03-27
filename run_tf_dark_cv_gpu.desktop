@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=run_tf_dark_cv_gpu.sh
+Exec=bash -c 'nvidia-docker run -it --rm --device=/dev/video0:/dev/video0:rw --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --volume="/media/ben/Data/Docker/Docker Data:/docker_data:rw" --name dev tf_dark_cv_gpu:latest'
+Terminal=true
+Type=Application
+Name[en_GB]=run_tf_dark_cv_gpu.desktop
